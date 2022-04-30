@@ -1,0 +1,35 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: #E5E5E5;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDF1EB;
+}
+
+header .titulo {
+    font-size: 1.5rem;
+    width: 80%;
+    border: 1px solid red;
+}
+
+header .login {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
