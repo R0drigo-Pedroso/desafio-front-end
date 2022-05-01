@@ -15,22 +15,22 @@
     <header>
 
         <div class="conteudo-header">
-            <p>
+            <h2>
                 Anais do Simpósio Latino Americano de Ciências de Alimentos 
-            </p>
-            <p>
+            </h2>
+            <h2>
                 Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-            </p>
+            </h2>
             
-            <p>	
+            <h2>	
                 ISSN: 1234-5678
-            </p>
+            </h2>
 
         </div>
 
         <div class="seletor">
             <p>
-                <img src="imagens/no-mundo-todo.png" alt="">
+                <img src="imagens/no-mundo-todo.png" alt="selecione o idioma">
             </p>
             <select name="select">
                 <option value="valor1">pt-br</option>
@@ -49,28 +49,78 @@
             </div>
         </div>
     </header>
-
-    <section>
-        <div class="conteudo-central">
-            <p>
-                Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
-            </p>
-
-            <video src="imagens/video-campinas.png"></video>
-
-        </div>
-        <div class="conteudo-direita">
-
-        </div>
+    
+    <!-- bloco fixo lateral -->
+    <section id="nav-laretal-esquerda">
+        <h1>SLACA 2019</h1>
+        <img src="Images/logo.png" alt="Logo 13 Slaca">
+        <ul>
+            <li><a href="#">Apresentação</a></li>
+            <li><a href="#">Comitês</a></li>
+            <li><a href="#">Autores</a></li>
+            <li><a href="#">Eixos temáticos</a></li>
+            <li><a href="#">Trabalhos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </section>
+    <!-- final bloco fixo lateral -->
+    
 
-    <main>
-        <section>
-            <div></div>
-            <div></div>
+    <main id="conteúdo-principal">
+
+        <!-- bloco de conteudo central (video - artigo lateral direito da tela) -->
+        <section id="conteudo-central-destaque">
+            <div class="conteudo-central">
+
+                <!-- texto destaque -->
+                <h2 class="text-destaque">
+                    Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
+                </h2>
+                <!-- final texto destaque -->
+
+                <!-- Icones -->
+                <nav id="icones">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="imagens/Icones/Download.png" alt="download">Download
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="imagens/Icones/Estrela.png" alt="download">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="imagens/Icones/doi.png" alt="download">
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        como citar esse trabalho?
+                    </p>
+                </nav>            
+            </div>
+            <!-- Final -> Icones -->
         </section>
 
-        <section></section>
+        <section id="conteudo-video">
+
+            <div class="video">
+                <figure id="container">
+                    <img src="imagens/Video.jpg" />  
+                    <figcaption>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</figcaption>
+                    <figcaption>Beatriz Christiane Melo</figcaption>
+                    <figcaption>FCA / Universidade Estadual de Campinas</figcaption>
+                  </figure>
+            </div>
+
+            <div class="artigo-lateral"></div>
+
+
+        </section>
+
     </main>
 
     <footer>
