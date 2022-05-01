@@ -11,25 +11,75 @@ body {
 }
 
 header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #FDF1EB;
+    background: #FDF1EB;
 }
 
-header .titulo {
-    font-size: 1.5rem;
-    width: 80%;
-    border: 1px solid red;
-}
+    header .conteudo-header {
+        display:none
+    }
 
-header .login {
+    header .seletor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .seletor img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .seletor select {
+        width: 10rem;
+        height: 2rem;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        background: #FDF1EB;
+        text-transform: uppercase;
+    }
+
+    header .login {
+        display: flex;
+        text-align: right;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+        .login img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+        }
+
+section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 20%;
-    border: 1px solid red;
+    padding: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
-    
+    section .conteudo-central {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #FDF1EB;
+        padding: 0.5rem;
+    }
+
+    section .conteudo-direita {
+        width: 100%;
+        display: flex;
+        background: #FDF1EB;
+        padding: 0.5rem;
+    }
+ 
+@media screen and (min-width: 600px) {
+    header .conteudo-header {
+        display:flex;
+        flex-direction: column;
+    }
 }
