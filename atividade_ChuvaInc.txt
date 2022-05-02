@@ -8,7 +8,8 @@ o que será avaliado:
 Tenha em mente que...
 É importante que você siga o layout à risca na sua implementação.
 
-Além disso é importante garantir que o seu código seja minimamente responsivo (ou seja, ele não pode explodir quando aberto num celular ou tablet, mas também não precisa estar super otimizado)
+Além disso é importante garantir que o seu código seja minimamente responsivo 
+(ou seja, ele não pode explodir quando aberto num celular ou tablet, mas também não precisa estar super otimizado)
 
 O que vamos avaliar
 👀 Se seu código faz sentido
