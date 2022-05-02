@@ -207,7 +207,38 @@ header {
             height: 1rem;
         }
     /* final > Configuração Icones */
-       
+    
+    /* Configuração do menu lateral direito da tela */
+
+    #artigos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #artigos .bloco-artigo article {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border-radius: 0.25rem;
+    }
+
+    #artigos .bloco-artigo ul li {
+        display: flex;
+        align-items: left;
+        margin-right: 0.5rem;
+        list-style: none;
+    }
+
+    #artigos .bloco-artigo span {
+        font-weight: bold;
+        color: black;
+    }
+
+
     /* Configuração video */
     #conteudo-video{
        position: relative;
