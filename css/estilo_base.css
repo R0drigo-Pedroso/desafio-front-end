@@ -31,6 +31,7 @@ img {
     height: auto;
 }
 
+/* menu lateral 13 SLACA  */
 #menu-lateral {
     display: flex;
     flex-direction: column;
@@ -62,7 +63,7 @@ img {
     #menu-lateral div img {
         width: 100%;
     }
-
+    
 /* Configuração do menu de Navegação */
     #menu-lateral nav {
         display: flex;
@@ -87,8 +88,9 @@ img {
 /* Final Configuração do menu de Navegação */
 
 
+/* Configuração de Titulo e Login */
 
-/* Configuração do menu de Titulo e Login */
+/* Css titulo header */
 #titulo-login {
     width: 100%;
     height: 100%;
@@ -111,9 +113,9 @@ img {
         padding-bottom: 0.5rem;
         font-size: 1.2rem;
     }
+/*final Css titulo header */
 
-    /* area de acesso */
-   
+/* area de acesso - login */
     .login {
         display: flex;
         justify-content: space-around;
@@ -157,6 +159,7 @@ img {
         border-radius: 100%;
         width: 3rem;
     }
+/* Final area de acesso - login */
     
-/* Final Configuração do menu de Titulo e Login */
+/* Final Configuração de Titulo e Login */
         
