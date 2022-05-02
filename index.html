@@ -11,51 +11,13 @@
 
 </head>
 <body>
-
-    <header>
-
-        <div class="conteudo-header">
-            <h2>
-                Anais do Simpósio Latino Americano de Ciências de Alimentos 
-            </h2>
-            <h2>
-                Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-            </h2>
-            
-            <h2>	
-                ISSN: 1234-5678
-            </h2>
-
-        </div>
-
-        <div class="seletor">
-            <p>
-                <img src="imagens/no-mundo-todo.png" alt="selecione o idioma">
-            </p>
-            <select name="select">
-                <option value="valor1">pt-br</option>
-                <option value="valor2" selected>en-us</option>
-                <option value="valor3">eu-as</option>
-            </select>
-
-            <div class="login">
-                <p>
-                    Bem vindo! Alguém
-                    alguem12@galoascientes.com
-                </p>
-                <p>
-                    <img src="imagens/Avatar.jpg" alt="foto login">
-                </p>
-            </div>
-        </div>
-    </header>
-    
-    <!-- bloco fixo lateral -->
-    <section id="nav-laretal-esquerda">
-        
+   <!-- bloco fixo lateral -->
+    <section id="menu-lateral">
         <div>
             <h1>SLACA 2019</h1>
-            <img src="imagens/Logo-13slaca.png" alt="Logo 13 Slaca">
+            <p>
+                <img src="imagens/Logo-13slaca.png" alt="Logo 13 Slaca">
+            </p>
         </div>
         <nav>
             <ul>
@@ -69,120 +31,44 @@
         </nav>
     </section>
     <!-- final bloco fixo lateral -->
-    
 
-    <main id="conteúdo-principal">
-
-        <!-- bloco de conteudo central (video - artigo lateral direito da tela) -->
-        <section id="conteudo-central-destaque">
-            <div class="conteudo-central">
-
-                <!-- texto destaque -->
-                <h2 class="text-destaque">
-                    Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
-                </h2>
-                <!-- final texto destaque -->
-
-                <!-- Icones -->
-                <nav id="icones">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="imagens/Icones/Download.png" alt="download">Download</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="imagens/Icones/Estrela.png" alt="estrela">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="imagens/Icones/doi.png" alt="doi">
-                            </a>
-                        </li>
-                    </ul>
-                    <p>
-                        como citar esse trabalho?
-                    </p>
-                </nav>            
-            </div>
-            <!-- Final -> Icones -->
-        </section>
-
-        <section id="conteudo-video">
-
-            <div class="video">
-                <a href="#"><img src="imagens/Video.jpg" alt="" class="video-div-img"></a>
-            </div>
-            
-            <div class="texto-top">
-                <h2>Análise sensorial de preparações 
-                    funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
-                </h2>
-            </div>
-
-            <div class="texto-bottom">
-                <img src="imagens/Avatar-Video.png" alt="">
-                <ul>
-                    <li><h1>Beatriz Christiane Melo</h1></li> 
-                    <li><h>FCA / Universidade Estadual de Campinas</h3></li>
-                </ul>
-            </div>
-        </section>
+    <header id="titulo-login">
         
-        <article id="artigos">
-            <div>
-                <h2>Detalhes</h2>
-            </div>
-            
-            <div class="bloco-artigo">
-                <article>
-                    <ul>
-                        <li>Tipo de Apresentação: <span> Pôster</span></li>
+        <!-- titulo -->
+        <div class="titulo">
+            <h3>Anais do Simpósio Latino Americano de Ciências de Alimentos</h3>
+            <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+            <h4>ISSN: 1234-5678</h4>
+        </div>
 
-                        <li> Eico temático: <span> Alimentos e saúde (As)</span></li>
+        <!-- area de acesso -->
+        <div class="login">
+            <div class="seletor">
 
-                        <li> Palavra-chaves <span> Alimentos funcionais, alimentação escolar(As)</span></li>
-                    </ul>
-                </article>
+                <p>
+                    <img src="imagens/no-mundo-todo.png" alt="selecione o idioma">
+                </p>
 
-                <article>
-                    <ul>
-                        <li>Galileo Galilei¹</li>
-
-                        <li>Berta Lange de Morretes²</li>
-
-                        <li>Isaac Newton³</li>
-
-                        <li>Cesar Lattes¹</li>
-
-                        <li>Stephen Hawking³</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li>¹Universidade Estadual de Campinas</li>
-
-                        <li>²Universidade de São Paulo</li>
-
-                        <li>³Instituto Nacional de Pesquisas Espaciais</li>
-
-                        <li>¹Universidade Federal do Rio de Janeiro</li>
-
-                        <li>Stephen Hawking³</li>
-                    </ul>
-                </article>
+                <select name="select" class="select-menu">
+                    <option value="valor1">pt-br</option>
+                    <option value="valor2" selected>en-us</option>
+                    <option value="valor3">eu-as</option>
+                </select>
             </div>
 
+            <div class="acesso">
+                <p>
+                    Bem vindo! alguem12@galoascientes.com
+                </p>
 
-            
-        </article>
+                <p>
+                    <img src="imagens/Avatar.jpg" alt="foto login">
+                </p>
+            </div>        
+        </div>
+    </header>
 
-    </main>
-
-    <footer>
-
-    </footer>
+   
 
     <script src="js/script.js"></script>
 </body>

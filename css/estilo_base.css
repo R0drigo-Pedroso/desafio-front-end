@@ -1,11 +1,4 @@
-@font-face{
-    font-family: "Roboto";
-    src: url(../Font/Roboto-Regular.ttf);
-}
-@font-face{
-    font-family: "Quicksand";
-    src: url(../Font/Quicksand-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *, ::after, ::before {
   box-sizing: border-box;
@@ -23,11 +16,14 @@ html {
 }
 
 
-  body {
+body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
+    display: flex;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -35,281 +31,132 @@ img {
     height: auto;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    background: #FDF1EB;
-}
-
-    header .conteudo-header {
-        display:none
-    }
-
-    header .seletor {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem;
-    }
-
-    /* configuração da img "no-mundo-todo" */
-    .seletor img { 
-        width: 2rem;
-        margin-right: 0.5rem;
-    }
-
-    .seletor select {
-        width: 6rem;
-        height: 2rem;
-        border-radius: 0.25rem;
-        margin: 0.2rem;
-        padding: 0.5rem;
-        background: #FDF1EB;
-        text-transform: uppercase;
-    }
-
-    header .login {
-        display: flex;
-        text-align: right;
-        align-items: center;
-        padding: 0.5rem;
-    }
-
-         /* configuração img "avatar-login" */
-        .login img {
-            width: 2rem;
-            height: 2rem;
-            margin-right: 0.5rem;
-            border-radius: 1rem;
-            margin: 0.5rem;
-        }
-
-
-/* configuração do menu lateral */
-#nav-laretal-esquerda {
+#menu-lateral {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: #ED7839;
+    width: 19.5%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     padding: 0;
-    width: 100%;
+    margin: 0;
+    height: 100vh;
+    position: fixed;
 }
 
-    #nav-laretal-esquerda div {
+    #menu-lateral div {
+        text-align: center;
+    }
+
+    #menu-lateral div h1 {
+        font-size: 2rem;
+        color: #FFF;
+        padding: 3.1rem;
+        background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    }
+
+    #menu-lateral div p {
+        width: 90%;
+        margin: auto;
+    }
+
+    #menu-lateral div img {
+        width: 100%;
+    }
+
+/* Configuração do menu de Navegação */
+    #menu-lateral nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FFF;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+        #menu-lateral nav a {
+            display: flex;
+            padding: 1rem;
+            color: #000;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        #menu-lateral nav a:hover {
+            border-left: rgba(237, 120, 57, 1) solid 5px;
+            background: #FDF1EB;
+        }
+/* Final Configuração do menu de Navegação */
+
+
+
+/* Configuração do menu de Titulo e Login */
+#titulo-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #FDF1EB;
+    margin-left: 19%;    
+}
+
+    #titulo-login .titulo {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        color: #725c5c;
+        font-size: 0.8rem;
+    }
+
+    #titulo-login .titulo h3 {
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* area de acesso */
+   
+    .login {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0.5rem;
-        margin: 0;
-        padding: 0;    
-        color: #fff;
     }
 
-    #nav-laretal-esquerda div img {
+    .seletor {
+        display: flex;
+        border: 1px solid #CCCCCC;
+        margin: 0 0 0 10px;
+    }
+    
+    .seletor .select-menu {
         width: 6rem;
-        height: 6rem;
-        margin-right: 0.5rem;
-        border-radius: 1rem;
-        margin: 0.5rem;
-    }
-
-    #nav-laretal-esquerda nav {
-        width: 100%;
-        background:#E5E5E5;
-    }
-
-    #nav-laretal-esquerda nav ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem;
-        list-style: none;
-    }
-
-    #nav-laretal-esquerda nav ul li {
-        padding: 2px;
-    }
-
-    #nav-laretal-esquerda nav ul li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 0.6rem;
-        font-weight: bold;
+        height: 3rem;
         text-transform: uppercase;
-    }
-
-    #nav-laretal-esquerda nav ul li a:hover {
-        background: #ED7839;
-        padding: 0.5rem;
-        color: #fff;
-        border-radius: 0.25rem;
-    }
-
-    /* configuração do menu lateral */
-
-
-
-#conteudo-central-destaque {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    padding: 0.5rem;
-}
-
-    #conteudo-central-destaque .text-destaque {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        color: #ED7839;
-    }
-
-    /* Configuração do icones */
-    #icones ul {
-        display: flex;
-        margin: 1rem 0 0;
-        padding: 0;
-    }
-
-        #icones ul li {
-            display: flex;
-            align-items: left;
-            margin-right: 0.5rem;
-            list-style: none;
-        }
-
-        #icones ul li a {
-            background: #ED7839;
-            color: #FDF1EB;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 0.5rem;
-            border-radius: 0.25rem;
-            text-decoration: none;
-        }
-
-        #icones ul li a:hover {
-            background: #c44a0d;
-        }
-
-        #icones p {
-            margin: 0;
-            padding: 0.5rem 0.5rem 0.5rem 0;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: bold;
-            color: #ED7839;
-        }
-
-        #icones img {
-            width: 1rem;
-            height: 1rem;
-        }
-    /* final > Configuração Icones */
-    
-    /* Configuração do menu lateral direito da tela */
-
-    #artigos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-    }
-
-    #artigos .bloco-artigo article {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem;
         margin: 0.5rem;
-        border-radius: 0.25rem;
+        padding: 0.5rem;
+        text-align: center;
+        background: #FDF1EB;
+        border: none;
     }
 
-    #artigos .bloco-artigo ul li {
+    .seletor img {
+        margin: 1rem;
+        width: 2rem;
+    }
+
+    .acesso {
         display: flex;
-        align-items: left;
-        margin-right: 0.5rem;
-        list-style: none;
     }
 
-    #artigos .bloco-artigo span {
-        font-weight: bold;
-        color: black;
+    .acesso p {
+        text-align: right;
+        margin: 0 0.5rem 0 0;
+        padding: 0;
     }
 
-
-    /* Configuração video */
-    #conteudo-video{
-       position: relative;
-    }
-
-    .texto-top h2{
-        position: absolute;
-        top: -80px;
-        left: 10px;
-        width: 80%;
-        height: 100%;
-        color: #FDF1EB;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.8rem;
-        font-weight: bold;
-        border-radius: 0.25rem;
-        text-decoration: none;
-    } 
-
-    .texto-bottom img{
-        position: absolute;
-        bottom: 40px;
-        width: 15%;
-        border-radius:30rem;
-        border: 1px solid #ED7839;
-        margin-left: 1rem;
-    }
-
-    .texto-bottom ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.1rem;
-        color: #fff;
-        list-style: none;
-    }
-
-    .texto-bottom ul li {
-        margin-bottom: 1rem;
-    }
-
-    .texto-bottom ul li:nth-child(1) {
-        font-size: 0.8rem;
-        font-weight: bold;
-        margin-right: 2rem;
+    .acesso img {
+        margin: 0 2rem 0 0;
+        border-radius: 100%;
+        width: 3rem;
     }
     
-    .texto-bottom ul li:nth-child(2) {
-        font-size: 0.6rem;
-        font-weight: bold;
-        margin-right: 3.5rem;
-    }
-    
-    .video a:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 99%;
-        background: rgba(141, 53, 6, 0.5);
-    }
- 
-@media screen and (min-width: 600px) {
-    header .conteudo-header {
-        display:flex;
-        flex-direction: column;
-    }
-}
+/* Final Configuração do menu de Titulo e Login */
+        
