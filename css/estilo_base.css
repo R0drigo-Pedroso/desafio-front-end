@@ -161,6 +161,15 @@ img {
 
 /* Configuração main - conteudo principal */
 
+main {
+    width: 80%;
+    height: 100%;
+    margin-left: 19%;
+    display: flex;
+    flex-direction: column;
+    background: #FDF1EB;
+}
+
     
 /* Final Configuração de Titulo e Login */
         
