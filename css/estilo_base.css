@@ -130,7 +130,7 @@ img {
         margin: 0 0 0 10px;
     }
     
-    .seletor .select-menu {
+    .select-menu {
         width: 6rem;
         height: 3rem;
         text-transform: uppercase;
@@ -149,6 +149,7 @@ img {
     .acesso {
         display: flex;
         padding: 1rem;
+        width: 50%;
     }
 
     .acesso p {
@@ -158,7 +159,7 @@ img {
 
     .acesso img {
         border-radius: 100%;
-        width: 3rem;
+        width: 7rem;
     }
 /* Final area de acesso - login */
 
@@ -174,12 +175,14 @@ main {
 }
 
     main section {
+        width: 80%;
         display: flex;
         flex-direction: column;
         background: red;
     }
 
     main article {
+        width: 19.5%;
         display: flex;
         flex-direction: column;
         background: blue;
