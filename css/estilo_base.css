@@ -15,7 +15,6 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
 body {
     width: 100%;
     margin: 0;
@@ -34,19 +33,19 @@ img {
 #menu-lateral {
     display: flex;
     flex-direction: column;
-    width: 19.5%;
+    width: 20%;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     padding: 0;
     margin: 0;
     height: 100vh;
+    position: absolute;
 }
-    #menu-lateral {
-        position: absolute;
+    /* #menu-lateral {   
         left: 0;
         top: 0;
         width: 20em;
-    }
+    } */
 
     #menu-lateral div {
         text-align: center;
@@ -96,10 +95,11 @@ img {
 
 /* Css titulo header */
 #titulo-login {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     background: #FDF1EB;
+    margin-left: 20%;
 }
 
     #titulo-login .titulo {
@@ -109,7 +109,6 @@ img {
         padding: 2rem;
         color: #725c5c;
         font-size: 0.8rem;
-        margin-left: 17%;
     }
 
     #titulo-login .titulo h3 {
@@ -159,32 +158,30 @@ img {
 
     .acesso img {
         border-radius: 100%;
-        width: 3.5rem;
+        width: 3rem;
     }
 /* Final area de acesso - login */
 
 /* Configuração main - conteudo principal */
 
 main {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    float: right;
+
+    margin-left: 20%;
 }
 
     main section {
         display: flex;
         flex-direction: column;
-        width: 75%;
         background: red;
-        margin-left: 17.5%;
     }
 
     main article {
         display: flex;
         flex-direction: column;
-        width: 25%;
         background: blue;
     }
 
