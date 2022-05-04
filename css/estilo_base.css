@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -27,6 +27,17 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     /* Espaçamento entre letras */
+     letter-spacing: 0.05em;
+
+     /* Espaçamento entre linhas */
+     line-height: 1.2;
+
+     font-style: normal;
+     font-weight: 400;
 }
 
 /* menu lateral 13 SLACA  */
@@ -54,8 +65,9 @@ img {
     #menu-lateral div h1 {
         font-size: 2rem;
         color: #FFF;
-        padding: 3.1rem;
+        padding: 3rem;
         background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+        font-weight: bold;
     }
 
     #menu-lateral div p {
@@ -92,10 +104,8 @@ img {
 
 
 /* Configuração de Titulo e Login */
-
 /* Css titulo header */
 #titulo-login {
-    width: 80%;
     display: flex;
     justify-content: space-around;
     background: #FDF1EB;
@@ -103,17 +113,26 @@ img {
 }
 
     #titulo-login .titulo {
-        width: 50%;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        margin: 0.7rem 0 0.7rem 6rem;
         color: #725c5c;
         font-size: 0.8rem;
     }
 
+    #titulo-login .titulo h1 {
+        font-size: 1.5rem;
+    }
+
     #titulo-login .titulo h3 {
         padding-bottom: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    #titulo-login .titulo h4 {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+
     }
 /*final Css titulo header */
 
@@ -122,6 +141,8 @@ img {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     .seletor {
@@ -162,12 +183,13 @@ img {
         width: 7rem;
     }
 /* Final area de acesso - login */
+/* Final Configuração de Titulo e Login */
+
+/* ---------------------------------------- */
 
 /* Configuração main - conteudo principal */
-
 main {
     width: 80%;
-    height: 100%;
     display: flex;
     justify-content: space-around;
 
@@ -178,19 +200,130 @@ main {
         width: 80%;
         display: flex;
         flex-direction: column;
-        background: red;
     }
 
     main article {
         width: 19.5%;
         display: flex;
         flex-direction: column;
-        background: blue;
     }
 
+/* Estilização do titulo e video  */
+    main section div {
+        width: 85%;
+        margin: 0 auto;
+    }
 
+    /* titulo */
+    main section .titulo h2 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.6rem;
+        color: #ED7839;
+        margin-top: 1rem;
 
+        /* Espaçamento entre letras */
+        letter-spacing: 0.05em;
 
+        /* Espaçamento entre linhas */
+        line-height: 1.2;
+    }
+
+    /* video */
+
+    #video {
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .video-texto-titulo h2 {
+        position: absolute;
+        color: white;
+        margin-top: 5%;
+        z-index: 10;
+        font-family: Roboto;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 900;
+
+        margin-left: -5%;
+    }
     
-/* Final Configuração de Titulo e Login */
-        
+    .video-autor{
+        padding-right: 80%;
+        padding-left: 2%;
+        position: absolute;
+        z-index: 10;
+        font-family: Roboto;
+    }
+    .video-autor img{
+        position: absolute;
+        margin-top: 45% ;
+        border: 1px solid orange;
+        border-radius: 100%;
+        width: 10%;
+    }
+    .video-autor ul{
+        list-style: none;
+        position: absolute;
+        margin-top: 46%;
+        left: 15%;
+        color: white;
+        line-height: 35px;
+    
+    }
+    .video-autor h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .video-img{
+        width: auto;
+        height:auto;
+    }
+    .video-img img{
+        width:100%;
+    }
+    
+    .video-img a:after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99%;
+        background: rgba(141, 53, 6, 0.5);
+    }
+/* Estilização do titulo e video  */
+
+/* Estilizaçãoo dos icones nav */
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+article ul {
+    width: 100%;
+    display: flex;
+}
+
+    article ul li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #ED7839;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        color: #FFF;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+
+    article ul li img {
+        width: 1.5rem;
+        margin: 0.2rem
+    }
