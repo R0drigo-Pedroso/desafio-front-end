@@ -22,7 +22,6 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
-    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -53,20 +52,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 200vh;
     position: absolute;
 }
-    /* #menu-lateral {   
-        left: 0;
-        top: 0;
-        width: 20em;
-    } */
 
     #menu-lateral div {
         text-align: center;
     }
 
     #menu-lateral div h1 {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
         color: #FFF;
-        padding: 3rem;
+        padding: 2rem;
         background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
         font-weight: bold;
     }
@@ -91,10 +85,10 @@ h1, h2, h3, h4, h5, h6 {
 
         #menu-lateral nav a {
             display: flex;
-            padding: 1rem;
+            padding: 1rem 2rem;
             color: #000;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: clamp(1rem, 1vw, 1.5rem);
         }
 
         #menu-lateral nav a:hover {
@@ -110,24 +104,23 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-around;
     background: #FDF1EB;
-    margin-left: 20%;
+    margin-left: 18%;
 }
 
     #titulo-login .titulo {
         display: flex;
         flex-direction: column;
-        margin: 0.7rem 0 0.7rem 6rem;
         color: #725c5c;
-        font-size: 0.8rem;
+        margin: 1rem 0 0 7.5rem; 
     }
 
     #titulo-login .titulo h1 {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.5vw, 2.5rem);
     }
 
     #titulo-login .titulo h3 {
         padding-bottom: 0.5rem;
-        font-size: 1rem;
+        font-size: clamp(0.75rem, 0.5vw, 1rem);
     }
 
     #titulo-login .titulo h4 {
@@ -174,16 +167,18 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
     }
 
-    .acesso p {
+    .acesso p:nth-child(1) {
+        margin: auto;
         text-align: right;
-        margin: 0.5rem;
     }
 
     .acesso img {
         border-radius: 100%;
-        width: 7rem;
+        width: 12rem;
+        margin-left: 0.5rem;
     }
 /* Final area de acesso - login */
+
 /* Final Configuração de Titulo e Login */
 
 /* ---------------------------------------- */
@@ -219,7 +214,7 @@ main {
     main section .titulo h2 {
         font-style: normal;
         font-weight: 900;
-        font-size: 1.6rem;
+        font-size: clamp(1.5rem, 1.5vw, 2.5rem);
         color: #ED7839;
         margin-top: 1rem;
 
@@ -242,7 +237,7 @@ main {
         margin-top: 5%;
         z-index: 10;
         font-family: Roboto;
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 1.5vw, 2.5rem);
         font-style: normal;
         font-weight: 900;
 
@@ -273,7 +268,7 @@ main {
     
     }
     .video-autor h1{
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 1.5vw, 2.5rem);
         font-weight: bold;
     }
     
@@ -310,7 +305,7 @@ article {
     }
 
     article .icones h3 {
-        font-size: 1rem;
+        font-size: clamp(0.75rem, 0.9vw, 1.5rem);
         color: #ED7839;
         margin: 0.5rem;
         text-transform: uppercase;
@@ -329,7 +324,7 @@ article {
         border-radius: 0.5rem;
         padding: 0.5rem;
         color: #FFF;
-        font-size: 0.8rem;
+        font-size: clamp(0.75rem, 0.5vw, 1rem);
         font-weight: bold;
         cursor: pointer;
         margin: 0.5rem;
@@ -353,7 +348,7 @@ article {
     article .detalhes-lateral-right h3 {
         font-family: 'Roboto';
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: clamp(0.75rem, 1.5vw, 3rem);
         padding: 1rem;
         color: #4E4E4E;
         background: #ECECEC;
@@ -363,7 +358,7 @@ article {
         padding: 0.5rem;
         list-style: none;
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size:clamp(0.75rem, 1vw, 1rem);
 
         font-family: 'Quicksand';
         text-decoration: none;
@@ -397,7 +392,7 @@ article {
     }
 
     details summary h1 {
-        font-size: 1.5rem;
+        font-size: clamp(0.75rem, 1.5vw, 3rem);
         background: #FDF1EB;
         padding: 1.5rem;
         font-weight: bold;
@@ -408,8 +403,12 @@ article {
     }
 
     details p {
-        font-size: 1rem;
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
         padding: 1rem;
+        font-family: 'Quicksand';
+
+        line-height: 1.8rem;
+        letter-spacing: 0.05em;
     }
 
     details a {
