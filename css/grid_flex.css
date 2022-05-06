@@ -1,0 +1,146 @@
+/* configuração Base */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  img {
+      max-width: 100%;
+  }
+
+        /* temporario */
+        body, html {
+            height: 100vh;
+        }
+  
+  html {
+      font-size: 14px;
+  }
+  
+  body, h1, h2, h3, p, figure {
+      margin: 0;
+      padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+}
+/* Finalização configuração Base */
+
+/* Inicio configuração Grid */
+aside, her {
+    grid-area: auto;
+}
+
+/* separação dos blocos */
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 15% 42.5% 42.5%;
+    grid-template-rows: 10% 45% auto;
+    grid-template-areas:
+        "sidebar header header"
+        /* "sidebar sect1  sect2" */
+        "sidebar main   main"
+        "sidebar footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #007FFF;
+}
+
+header {
+    grid-area: header;
+    background-color: #91C8FF;
+}
+
+main {
+    grid-area: main;
+    background-color: #7DA9D5;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section:nth-of-type(1) {
+    grid-area: sect1;
+    background-color: #B3D8FD;
+    width: 50%;
+
+}
+
+main section:nth-of-type(2) {
+    grid-area: sect2;
+    background-color: #5E86AF;
+    width: 20%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #588EC3;
+}
+/* Finalização do separação dos blocos */
+
+/* Adicionando conteúdos e imagem */
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 10%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    background: #ED7839;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 5);
+        grid-template-areas:
+            "header"    
+            "main"
+            "footer";
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:nth-of-type(1), main section:nth-of-type(2) {
+        grid-area: sect1;
+        width: 100%;
+    }
+
+}
