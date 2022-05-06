@@ -427,27 +427,86 @@ article {
     background: #FDF1EB;
     padding: 1.5rem;
     font-weight: bold;
-    width: 91.5%;
-
+    width: 73%;
+    margin-left: 24%;
 
     background: #FDF1EB;
     border: 2px solid #ECECEC;
     border-radius: 3px 3px 0px 0px;
 }
 
+/* Criar tópico */
+.criar-topico {
+    width: 73%;
+    margin-left: 24%;
+    border: 2px solid #ECECEC;
+}
+    .criar-topico h3 {
+        font-size: clamp(0.75rem, 1.2vw, 3rem);
+        color: #ED7839;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+    }
 
-    .novo-topico {
+    .criar-topico p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .criar-topico img {
+        width: 5rem;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .criar-topico h4 {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        color: #595959;
+        width: 70%;
+        text-align: center;
+        margin: 3rem auto;
+    }
+
+    .criar-topico button {
+        width: 15%;
+        height: 2rem;
+        background: #ED7839;
+        color: #FFF;
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        font-family: 'Quicksand';
+
+        display: flex;
+        align-items: center;
+        margin: -1rem auto;
+    }
+
+    .criar-topico button img {
+        width: 50px;
+    }
+
+/* estilização formulario enviar */
+    .enviar-topico {
         display: none;
         flex-direction: column;
+        width: 73%;
+        margin: 3% 0 0 24%;
     }
 
-    .novo-topico label {
+    .enviar-topico label {
         font-size: clamp(0.75rem, 1vw, 1.5rem);
         margin-top: 1rem;
+        display: flex;
+        color: #ED7839;
     }
 
-    .novo-topico input {
-        width: 90%;
+    .enviar-topico input {
+        width: 100%;
         height: 3rem;
         border-radius: 3px;
         padding: 0.5rem;
@@ -456,8 +515,8 @@ article {
         margin-top: 0.5rem;
     }
 
-    .novo-topico textarea {
-        width: 90%;
+    .enviar-topico textarea {
+        width: 100%;
         height: 10rem;
         border-radius: 3px;
         padding: 0.5rem;
@@ -466,14 +525,14 @@ article {
         margin-top: 0.5rem;
     }
 
-    .novo-topico p {
-        width: 90%;
+    .enviar-topico p {
+        width: 100%;
         text-align: right;
         background: #FDF1EB;
         
     }
 
-    .novo-topico button {
+    .enviar-topico button {
         font-size: clamp(0.75rem, 1vw, 1.5rem);
         width: 10vw;
         height: 2rem;
@@ -484,15 +543,142 @@ article {
         font-family: 'Quicksand';
     }
 
-    .novo-topico a {
+    .enviar-topico a {
         text-decoration: none;
         margin: 0;
         padding: 0;
     }
 
-    .novo-topico span {
+    .enviar-topico span {
         font-size: clamp(0.75rem, 1vw, 1.5rem);
         font-family: 'Quicksand';
         margin-top: 0.5rem;
         text-align: left;
+    }
+
+    .enviar-topico h4 {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        text-align: center;
+        color: #5C5C5C;
+    }
+
+    .criar-novo-topico {
+    width: 73%;
+    margin-left: 25%;
+    border: 2px solid #ECECEC;
+    margin-top: 2rem;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .criar-novo-topico h3 {
+        font-size: clamp(0.75rem, 1.2vw, 3rem);
+        font-weight: bold;
+
+        color: #ED7839;
+        padding: 1rem;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .criar-novo-topico h4 {
+        font-size: clamp(0.75rem, 0.8vw, 1.5rem);
+        color: #595959;
+
+        padding: 3rem 0;
+
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+   
+    .criar-novo-topico p {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .criar-novo-topico button {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        width: 10vw;
+        height: 2rem;
+        text-align: center;
+        color: white;
+        background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+        border: none;
+        font-family: 'Quicksand';
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        border-radius: 6%;
+    }
+
+    .criar-novo-topico button img {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* feedback do autor */
+
+    .feedback {
+        display: none;
+        flex-direction: column;
+        width: 73%;
+        margin-left: 24%;
+        border: 2px solid #ECECEC;
+        margin-top: 2rem;
+
+        align-items: center;
+        opacity: 0.8;
+        background: #FDF1EB;
+    }
+
+   .feedback img {
+        width: 2rem;
+        margin: 0 auto;
+    }
+
+    .feedback h3 {
+        font-size: clamp(0.75rem, 1.2vw, 3rem);
+        font-weight: 400;
+        text-align: center;  
+    }
+
+    .feedback p {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        padding: 1rem;
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* post ou comentario */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 22%;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        body {
+            font-size: 0.8rem;
+        }
     }

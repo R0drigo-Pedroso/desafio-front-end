@@ -21,12 +21,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Apresentação</a></li>
-                <li><a href="#">Comitês</a></li>
-                <li><a href="#">Autores</a></li>
-                <li><a href="#">Eixo temáticos</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Contato</a></li>
+                <a href="#">Apresentação</a></li>
+                <a href="#">Comitês</a></li>
+                <a href="#">Autores</a></li>
+                <a href="#">Eixo temáticos</a></li>
+                <a href="#">Trabalhos</a></li>
+                <a href="#">Contato</a></li>
             </ul>
         </nav>
     </section>
@@ -86,8 +86,8 @@
                 <div class="video-autor">
                     <img src="imagens/Avatar-Video.png" alt="" width="20%">
                     <ul>
-                        <li><h1>Beatriz Christiane Melo</h1></li> 
-                        <li><h3>FCA / Universidade Estadual de Campinas</h3></li>
+                        <h1>Beatriz Christiane Melo</h1></li> 
+                        <h3>FCA / Universidade Estadual de Campinas</h3></li>
                     </ul>
                 </div>
                 <div class="video-img">
@@ -99,9 +99,9 @@
         <article>
             <div class="icones">
                 <ul>
-                    <li><img src="imagens/Icones/Download.png" alt="Download">Download</li>
-                    <li><img src="imagens/icones/Estrela.png" alt="Estrela"></li>
-                    <li><img src="imagens/icones/doi.png" alt="Doi"></li>
+                    <img src="imagens/Icones/Download.png" alt="Download">Download</li>
+                    <img src="imagens/icones/Estrela.png" alt="Estrela"></li>
+                    <img src="imagens/icones/doi.png" alt="Doi"></li>
                 </ul>
                 <h3>como citar esse trabalho?</h3>
             </div>
@@ -109,49 +109,49 @@
             <div class="detalhes-lateral-right">
                 <h3>Detalhes</h3>
                 <ul>
-                    <li>
+                    
                         <a href="">Tipo de Apresentação: <strong>Pôster</strong></a>
                     </li>
-                    <li>
+                    
                         <a href="">Eixo temático: <strong>Alimentação e saúde (AS)</strong></a>
                     </li>
-                    <li>
+                    
                         <a href="">Palavras-chaves <strong>Alimentos funcionais, alimentação escolar.</strong></a>
                     </li>
-                    <li>
+                    
                         <a href="">Tipo de Apresentação: <strong>Pôster</strong></a>
                     </li>
                 </ul>
 
                 <ul>
-                    <li>
+                    
                         <a href="">Galileo Galilei¹</a>
                     </li>
-                    <li>
+                    
                         <a href="">Berta Lange de Morretes²</a>
                     </li>
-                    <li>
+                    
                         <a href="">Isaac Newton³</a>
                     </li>
-                    <li>
+                    
                         <a href="">Cesar Lattes¹</a>
                     </li>
-                    <li>
+                    
                         <a href="">Stephen Hawking³</a>
                     </li>
                 </ul>
 
                 <ul>
-                    <li>
+                    
                         <a href="">¹Universidade Estadual de Campinas</a>
                     </li>
-                    <li>
+                    
                         <a href="">²Universidade de São Paulo</a>
                     </li>
-                    <li>
+                    
                         <a href="">³Instituto Nacional de Pesquisas Espaciais</a>
                     </li>
-                    <li>
+                    
                         <a href="">³Universidade Federal do Rio de Janeiro</a>
                     </li>
                 </ul>
@@ -167,7 +167,7 @@
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti aut atque vel illum magnam ducimus facilis, fugiat, ipsa quidem ipsum iure odit numquam suscipit eveniet repudiandae voluptatum esse perspiciatis ab.
             Odit vitae sequi pariatur culpa iusto possimus vel temporibus, sit debitis obcaecati quisquam minima earum, at fugit sed saepe voluptatum non illo cupiditate distinctio, illum magni quasi accusantium. Minus, rerum?
-            Ratione sapiente ad optio fugit maxime corrupti illo consectetur, saepe, aut placeat eius doloribus sequi ut necessitatibus reiciendis corporis minus at, voluptates beatae iusto. Earum expedita saepe enim iste tempore... <a href="#Resumo" title="leia mais">ver mais</a>
+            Ratione sapiente ad optio fugit maxime corrupti illo consectetur, saepe, aut placeat eius doloribus sequi ut necessitatibus reiciendis corporis minus at, voluptates beatae iusto. Earum expedita saepe enim iste tempore
         </p>
         </summary>
         <div>
@@ -183,57 +183,57 @@
         <h2>Discussões</h2>
 
         <!-- Criar tópico -->
-        <div class="compartihe">
+        <div id="criar-topico" class="criar-topico">
             <h3>Compartilhe suas ideias ou dúvidas com os autores!</h3>
             <p>
-                <img src="" alt="compartilhe">
-                <img src="" alt="compartilhe">
-                <img src="" alt="compartilhe">
+                <img src="imagens/Icones/Icone1.png" alt="">
+                <img src="imagens/Icones/Icone2.png" alt="">
+                <img src="imagens/Icones/Icone3.png" alt="">
             </p>
+
             <h4>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</h4>
 
-            <button type="submit">Enviar</button>
-            
-        </div>  
+            <button type="button" onclick="formulario()" value="clique"><img src="imagens/Icones/Criar.png"> Criar tópico</button>
+        </div>
 
-        <!-- Comentarios -->
-        <details>
-            <summary><h1>Resumo</h1>
-                <div>
-                    <h2>Assunto da pergunta aparece aqui</h2>
-                    <p>Carlos Henrique Santos</p>
-                    <p>
-                        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
-                    </p>
-                    
-                </div>
-            </summary>
-            <div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... </p>
-            </div>
-        </details>
-
-
-
-        <!-- Enviar -->
-        <div class="novo-topico">
+        
+       <!-- Enviar -->
+        <div id="enviar-topico" class="enviar-topico">
+            <h4>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h4>
             <label for="assunto" id="assunto">Assunto</label>
-            <input type="text" name="assunto" id="assunto" placeholder="Assunto">
+            <input type="text" name="assunto" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
             <label for="mensagem" id="mensagem">Mensagem</label>
             <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
             <p>
-                <a href="#">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </a>
+                    <button type="submit" onclick="formulario2()">Enviar</button>
             </p>    
         </div>
 
+        <!-- Criar novo tópico -->
+        <div id="criar-novo-topico" class="criar-novo-topico">
+            <h3>Seu tópico foi enviado com sucesso! :D</h3>
+            <h4>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</h4>
+            <p><a href="">Descubra outros trabalhos!</a></p>
+            
+            <button class="btn-terceiro"type="button"  onclick="formulario()" value="clique"><img src="imagens/Icones/Criar.png"> Criar tópico</button>
+        </div>
+
+        <!-- feedback do autor -->
+        <div id="feedback" class="feedback">
+            <div class="front-comment-div">
+                <p>
+                    <img src="imagens/Icones/Aguardando.png" alt="Icone de aguardando verificação" width="30px">
+                </p>
+                <h3>Aguardando feedback dos autores</h3>
+                <p><a href="#">Editar tópico</a></p>
+        </div>
+
+        <!-- post ou comentarios -->
     </section>
 
+    <footer class="footer-copy">
+        <img src="imagens/Imagem-footer.png" width="100%">
+    </footer>
     <!-- final Area do campo RESUMO -->
 
     <script src="js/script.js"></script>
