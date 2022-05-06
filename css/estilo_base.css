@@ -416,3 +416,85 @@ article {
         color: #ED7839;
         font-weight: bold;
     }
+
+.discussoes {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.discussoes h2 {
+    font-size: clamp(0.75rem, 1.5vw, 3rem);
+    background: #FDF1EB;
+    padding: 1.5rem;
+    font-weight: bold;
+    width: 91.5%;
+
+
+    background: #FDF1EB;
+    border: 2px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.compartihe {
+}
+
+    .novo-topico {
+        display: none;
+        flex-direction: column;
+    }
+
+    .novo-topico label {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        margin-top: 1rem;
+    }
+
+    .novo-topico input {
+        width: 90%;
+        height: 3rem;
+        border-radius: 3px;
+        padding: 0.5rem;
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        font-family: 'Quicksand';
+        margin-top: 0.5rem;
+    }
+
+    .novo-topico textarea {
+        width: 90%;
+        height: 10rem;
+        border-radius: 3px;
+        padding: 0.5rem;
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        font-family: 'Quicksand';
+        margin-top: 0.5rem;
+    }
+
+    .novo-topico p {
+        width: 90%;
+        text-align: right;
+        background: #FDF1EB;
+        
+    }
+
+    .novo-topico button {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        width: 10vw;
+        height: 2rem;
+        text-align: center;
+        color: white;
+        background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+        border: none;
+        font-family: 'Quicksand';
+    }
+
+    .novo-topico a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .novo-topico span {
+        font-size: clamp(0.75rem, 1vw, 1.5rem);
+        font-family: 'Quicksand';
+        margin-top: 0.5rem;
+        text-align: left;
+    }
