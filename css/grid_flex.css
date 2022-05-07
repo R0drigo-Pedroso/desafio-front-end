@@ -1,4 +1,6 @@
 /* configuração Base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 *, *::after, *::before {
     box-sizing: border-box;
   }
@@ -26,13 +28,13 @@
 }
 /* Finalização configuração Base */
 
-/* Inicio configuração Grid */
-aside, her {
-    grid-area: auto;
-}
 
+/* Inicio configuração Grid */
 /* separação dos blocos */
 body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+
     margin: 0;
     display: grid;
     grid-template-columns: 15% 42.5% 42.5%;
@@ -46,7 +48,6 @@ body {
 
 aside {
     grid-area: sidebar;
-    background-color: #007FFF;
 }
 
 header {
@@ -80,24 +81,65 @@ footer {
 }
 /* Finalização do separação dos blocos */
 
-/* Adicionando conteúdos e imagem */
 
-aside div {
+/* Adicionando conteúdos e imagem - ASIDE */
+aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 10%;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    background: #ED7839;
-    color: #fff;
 }
 
+    aside div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 10%;
+        padding: 2rem;
 
+        /* espaçamento entre letras */
+        letter-spacing: 0.3rem;
 
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        color: #FFF;
+        background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
 
+    aside nav {
+        width: 100%;
+        height: 10%;
+        font-size: clamp(1.5rem, 1vw, 2rem);
+        line-height: 2;
+    }
+
+    aside ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside nav li {
+        width: 100%;
+        list-style: none;
+        background: #ffffff;
+        padding: 0.8rem;
+        margin-top: 0.3rem;
+    }
+
+    aside nav li a {
+        color: #725C5C;
+        text-decoration: none;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    aside nav li:hover {
+        border-left: rgba(237, 120, 57, 1) solid 5px;
+        background: #FDF1EB;
+    }
+/* Finalizado Adicionando conteúdos e imagem - ASIDE */
 
 
 
