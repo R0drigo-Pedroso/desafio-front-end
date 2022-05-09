@@ -53,22 +53,47 @@ header {
 main {
     grid-area: main;
     background-color: #7DA9D5;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 main section:nth-of-type(1) {
-    grid-area: sect1;
+    /* grid-area: sect1;
     background-color: #B3D8FD;
-    width: 100%;
-
+    width: 100%; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: #B3D8FD;
 }
 
 main section:nth-of-type(2) {
-    grid-area: sect2;
-    background-color: #5E86AF;
-    width: 30%;
+    /* grid-area: sect2;
+    background-color: #5e83aa;
+    width: 50%;
+    display: flex; */
+
+
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: blue;
 }
+
+main section:nth-of-type(3) {
+    /* grid-area: sect3;
+    background-color: #5E86AF;
+    width: 50%;
+    display: flex; */
+   
+    width: 100%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: red;
+}
+
 
 footer {
     grid-area: footer;
@@ -206,6 +231,8 @@ aside {
         border-radius: 100%;
     }
 
+
+/* Adicionando Video e textos  */
 
 
 
