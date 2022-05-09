@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 10% 60% 60% 20%;
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar sect1  sect1"
+        "sidebar sect2  sect3"
+        "sidebar main   main"
+        "sidebar footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #E5E5E5;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+    aside div {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        background: #ed7839;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    aside div p {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        color: #fff;
+    }
+
+    aside .imagem {
+        margin: 0;
+    }
+
+    aside p img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    aside nav {
+        font-size: clamp(1.5rem, 0.8vw, 1.5rem);
+    }
+
+    aside ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside nav li {
+        list-style: none;
+        background: #ffffff;
+        padding: 0.8rem;
+        margin-top: 0.3rem;
+    }
+
+    aside nav li a {
+        color: #725C5C;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    aside nav li:hover {
+        border-left: rgba(237, 120, 57, 1) solid 5px;
+        background: #FDF1EB;
+    }
+
+
+
+header {
+    grid-area: header;
+    background-color: #E5E5E5;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+    header div {
+        margin: 2rem;
+    }
+
+header .text-center {
+    font-size: clamp(2rem, 1vw, 2rem);
+    font-size: 'Roboto', sans-serif;
+    color: #725C5C;
+
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    font-size: clamp(1rem, 0.8vw, 2rem);
+    color: #725C5C;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+    /* espaçamento entre letras */
+    letter-spacing: 0.2rem;
+} 
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+header nav select {
+    width: 100%;
+    border: none;
+    background: #FDF1EB;
+    font-size: clamp(1rem, 0.8vw, 2rem);
+    color: #725C5C;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav img {
+    width: 15%;
+    margin: 0 auto;
+}
+
+header .acesso {
+    display: flex;
+    width: 25%;
+    margin-right: 2rem;
+}
+
+header .acesso p {
+    margin: 0 auto;
+    padding: 0;
+    font-size: clamp(1rem, 1vw, 2rem);
+    text-align: right;
+}
+
+header .acesso img {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 0.5rem;
+    border-radius: 100%;
+}
+
+section:nth-of-type(1) {
+    grid-area: sect1;
+    background-color: #B3D8FD;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background-color: #5E86AF;
+}
+
+section:nth-of-type(3) {
+    grid-area: sect3;
+    background-color: #5E86AF;
+}
+
+main {
+    grid-area: main;
+    background-color: #7DA9D5;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #588EC3;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {         
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+
+        background-color: #E5E5E5;
+
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(auto, 5);
+        grid-template-areas:
+            "header"
+            "sect1"
+            "sect2"
+            "main"
+            "footer";
+    }
+
+
+}
